@@ -1,0 +1,155 @@
+
+
+.image__placeholder-signup {
+    width: 450px;
+    height: 536px;
+
+    background: url("../images/neck1.jpeg");
+    border-radius: 10px;
+    background-size: cover;
+    background-position: 50% 50%;
+}
+
+.typeform {
+
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 20px;
+
+    /* width: 450px;
+    height: 350px; */
+
+}
+
+.typeform-form {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 25px;
+}
+
+.input-wrap {
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 8px 20px;
+    gap: 12px;
+
+    width: 450px;
+    height: 60px;
+
+    background: #FFFFFF;
+    /* light/blue-4
+
+    Hovered UI element background
+    */
+    border: 1px solid #DBE3FF;
+    border-radius: 10px;
+
+    position: relative;
+}
+
+.input-wrap i {
+    color: #9CADF2;
+    outline: none;
+}
+
+.input-wrap .input {
+    border: none;
+    border-left: 1px solid #DBE3FF;;
+    padding: 5px 12px 1px 12px;
+    flex-grow: 1;
+}
+
+.input-wrap .input:focus {
+    outline: none;
+}
+
+.invalid {
+    outline: 1px solid rgb(232, 100, 100);
+    color:rgb(232, 100, 100) !important;
+}
+
+.valid {
+    outline: 1px solid rgb(111, 232, 100);
+    color:rgb(111, 232, 100) !important;
+}
+
+.error {
+    color: rgb(232, 100, 100);
+    font-family: 'Mulish';
+    position: absolute;
+    bottom: -40%;
+}
+
+
+::placeholder {
+    font-family: 'Mulish';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 140%;
+}
+
+
+@media (max-width: 700px) {
+    .welcome {
+        width: 375px !important;
+        height: 984px !important;
+        align-items: center;
+        justify-content: flex-start;
+        padding: 40px 0px;
+        gap: 40px;
+
+        width: 375px;
+        height: 931px;
+
+    }
+
+    .heading {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 0px;
+        gap: 16px;
+        height: 106px;
+    }
+
+    .head {
+        width: 315px !important;
+        height: 38px !important;
+
+        font-size: 32px !important;
+        /* or 38px */
+    }
+
+    .subhead {
+        font-size: 16px;
+    }
+
+    .typeform {
+        width: 315px;
+        height: 350px;
+    }
+
+    .input-wrap {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        padding: 8px 20px;
+        gap: 12px;
+
+        width: 315px;
+        height: 60px;
+
+    }
+
+    .error {
+        font-size: 13px;
+    }
+}
+

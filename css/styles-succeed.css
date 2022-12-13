@@ -1,0 +1,37 @@
+.image__placeholder-succeed {
+    width: 450px;
+    height: 536px;
+
+    background: url("../images/neck2.jpeg");
+    border-radius: 10px;
+    background-size: cover;
+    background-position: 50% 50%;
+
+}
+
+@media (max-width: 700px) {
+    .welcome {
+        height: 733px;
+        justify-content: flex-start;
+        gap: 100px;
+    }
+
+    .image__placeholder-succeed {
+        width: 322px !important;
+        height: 315px !important;
+    }
+
+    .heading {
+        gap: 40px;
+    }
+
+    .head {
+        height: 38px !important;
+        font-size: 32px;
+    }
+
+    .subhead {
+        height: 26px !important;
+        font-size: 16px;
+    }
+}

@@ -1,0 +1,31 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200;0,300;0,400;1,200;1,300&display=swap" rel="stylesheet">
+    <!-- CSS only -->
+    <link rel="stylesheet" href="css/styles-global.css">
+    <link rel="stylesheet" href="css/styles-succeed.css">
+    <title>Succeed</title>
+</head>
+<body>
+    
+    <div class="welcome-screen">
+        <main class="welcome">
+            <div class="image__placeholder-succeed"></div>
+            <div class="container">
+                <div class="heading">
+                    <h1 class="head">Successfully logged in</h1>
+                    <h2 class="subhead user-mail">User@gmail.com</h2>
+                </div>
+            </div>
+        </main>
+    </div>
+    <script src="./js/index.js"></script>
+    <script>
+        document.querySelector('.user-mail').textContent = localStorage.getItem('email');
+    </script>
+</body>
+</html>

@@ -1,0 +1,190 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit; 
+}
+
+html {
+    /* font-size: 62.5%; */
+    box-sizing: border-box;
+}
+
+body {
+    /* linear-gradient to add the 60% opacity on top of the image */
+    background-image: linear-gradient(to left, rgba(255, 255, 255, 0.4), rgba(255, 255, 255, 0.4)), url("../images/image.png");
+    background-size: cover;
+    background-position: 50% 50%;
+}
+
+
+.welcome-screen {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.welcome {
+    /* width: 1080px;
+    height: 435px; */
+    background: rgba(245, 247, 255, 0.85);
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 60px;
+    gap: 60px;
+}
+
+.heading {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 20px;
+}
+
+@font-face {
+    font-family: 'Abdoullah Ashgar EL-kharef';
+    src: url("../Abdoullah/Abdoullah.ttf");
+}
+
+.head {
+    font-family: 'Abdoullah Ashgar EL-kharef';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 56px;
+    line-height: 120%;
+
+    display: flex;
+    align-items: center;
+    text-transform: capitalize;
+    color: #2D2D2D;
+}
+
+.subhead {
+    
+    font-family: 'Mulish';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 160%;
+    color: #1F1249;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 60px;
+    /* width: 450px;
+    height: 225px; */
+}
+
+.cta {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 20px;
+}
+
+.btn {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+
+    width: 450px;
+    height: 60px;
+
+    background: linear-gradient(113.87deg, #2663DF 14.81%, #758FF0 88.76%);
+    box-shadow: 0px 6px 18px #9CADF2;
+    border-radius: 10px;
+
+    border: none;
+
+    font-family: 'Mulish';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 140%;
+
+    color: #FFFFFF;
+
+    cursor: pointer;
+}
+
+.btn.disabled {
+    background: linear-gradient(113.87deg, hsla(220, 74%, 51%, 0.503) 14.81%, hsla(227, 80%, 70%, 0.503) 88.76%);
+    cursor:not-allowed;
+}
+
+
+.btn a {
+    text-decoration: none;
+    color: #fff;
+
+}
+
+.btn span {
+    text-decoration: none;
+}
+
+
+@media (max-width: 700px) {
+    .welcome {
+        flex-direction: column;
+
+        padding: 40px 0px;
+        gap: 40px;
+
+        width: 375px;
+        height: 647px;
+    }
+    .container {
+        padding: 0px;
+        gap: 40px;
+
+        width: 315px;
+        height: 212px;
+    }
+    .heading {
+        gap: 10px;
+
+        width: 315px;
+        height: 112px;
+    }
+
+    .head {
+        width: 315px !important;
+        height: 50px !important;
+        justify-content: center !important;
+    }
+    .subhead {
+        text-align: center !important;
+        width: 315px !important;
+        height: 52px !important;
+    }
+    .image__placeholder {
+        width: 315px !important;
+        height: 315px !important;
+    }
+    .image__placeholder-signup {
+        width: 315px !important;
+        height: 315px !important;
+    }
+    
+    .btn {
+        width: 315px !important;
+        height: 60px !important;
+
+    }
+}

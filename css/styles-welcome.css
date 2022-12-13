@@ -1,0 +1,59 @@
+
+
+.image__placeholder {
+    background-image: url("../images/neck.jpeg");
+    width: 450px;
+    height: 315px;
+    background-size: cover;
+    background-position: 50% 50%;
+    border-radius: 10px;
+}
+
+
+.image__placeholder-signup {
+    background-image: url("../images/neck1.jpeg");
+    width: 450px;
+    height: 536px;
+    background-size: cover;
+    background-position: 50% 50%;
+    border-radius: 10px;
+}
+
+@media (max-width: 700px) {
+    .container {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 0px;
+        gap: 40px;
+
+        width: 315px;
+        height: 212px;
+    }
+    .heading {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 0px;
+        gap: 10px;
+
+        width: 315px;
+        height: 112px;
+    }
+
+    .head {
+        width: 315px;
+        height: 50px;
+        justify-content: center;
+    }
+    .subhead {
+        text-align: center;
+        width: 315px;
+        height: 52px;
+    }
+    .btn {
+        width: 315px !important;
+        height: 60px !important;
+
+    }
+}
